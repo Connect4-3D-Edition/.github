@@ -18,7 +18,7 @@ Public-facing copy should emphasize strategic depth, fairness, competitive clari
 
 - `profile/README.md`: public organization profile page
 
-When the developer cockpit changes materially, the profile README should point developers to the `.cockpit` repository as the starting point for workspace setup and local onboarding.
+When the developer workspace changes materially, the profile README should point developers to the `.wrapper` repository as the starting point for workspace setup and local onboarding.
 
 ## Working rule for the agent
 

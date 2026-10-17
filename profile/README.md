@@ -8,7 +8,7 @@ This organization is split into focused repositories so each part of the stack c
 
 | Repository | Purpose |
 | --- | --- |
-| [`.cockpit`](https://github.com/Connect4-3D-Edition/.cockpit) | Developer cockpit with the shared VS Code workspace, local setup guides, and cross-repo notes |
+| [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) | Developer workspace with the shared VS Code workspace, local setup guides, and cross-repo notes |
 | [`frontend`](https://github.com/Connect4-3D-Edition/frontend) | React-based client for the player experience and 3D presentation |
 | [`service-api`](https://github.com/Connect4-3D-Edition/service-api) | FastAPI service for user-facing platform features such as authentication |
 | [`game-api`](https://github.com/Connect4-3D-Edition/game-api) | FastAPI service for game-specific backend logic |
@@ -16,14 +16,16 @@ This organization is split into focused repositories so each part of the stack c
 | [`db-migrations`](https://github.com/Connect4-3D-Edition/db-migrations) | Alembic-based database schema evolution and initial data population |
 | [`infrastructure`](https://github.com/Connect4-3D-Edition/infrastructure) | Local database setup and infrastructure definitions |
 
+The current working application is singleplayer against the computer, with guest/member sessions and member history. Multiplayer and competitive rating updates remain planned work.
+
 ## What the stack looks like
 
 - The frontend is built with React and Babylon.js-related tooling for the client experience.
-- Backend services are Python 3.12 applications built around FastAPI and Uvicorn.
+- Backend services are Python 3.12+ applications built around FastAPI and Uvicorn.
 - Shared backend code is centralized in `common-lib`.
 - Database changes are handled separately in `db-migrations`.
 - Environment and deployment foundations live in `infrastructure`.
-- Local developer onboarding and workspace entry live in `.cockpit`.
+- Local developer onboarding and workspace entry live in `.wrapper`.
 
 ## Why it is structured this way
 
@@ -33,7 +35,7 @@ It also makes the public organization easier to browse: visitors can quickly see
 
 ## Where to begin
 
-- Developers starting locally should begin with the [`.cockpit`](https://github.com/Connect4-3D-Edition/.cockpit) repository for workspace setup, local environment instructions, and the shared workspace file.
+- Developers starting locally should begin with the [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) repository for workspace setup, local environment instructions, and the shared workspace file.
 - New visitors who want the product-facing application can start with the [`frontend`](https://github.com/Connect4-3D-Edition/frontend) repository.
 - Anyone trying to understand the backend split should look at [`service-api`](https://github.com/Connect4-3D-Edition/service-api), [`game-api`](https://github.com/Connect4-3D-Edition/game-api), and [`common-lib`](https://github.com/Connect4-3D-Edition/common-lib).
 - The infrastructure and database repositories show how the supporting environment is organized behind the application.
