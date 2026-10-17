@@ -16,7 +16,7 @@ This organization is split into focused repositories so each part of the stack c
 | [`db-migrations`](https://github.com/Connect4-3D-Edition/db-migrations) | Alembic-based database schema evolution and initial data population |
 | [`infrastructure`](https://github.com/Connect4-3D-Edition/infrastructure) | Local database setup and infrastructure definitions |
 
-The current application supports live human multiplayer with queueing, WebSocket move updates, five-minute clocks, and reconnectable matches, plus singleplayer training against the computer. Guests and members can play; member history includes both modes. Matches are currently unrated.
+The current application supports live multiplayer with FIFO queueing, ten-second match confirmation, ghost rivals after a twenty-second wait, WebSocket updates, five-minute clocks, and reconnectable matches, plus singleplayer training against the computer. Guests and members can play; persistent member profiles and histories include ghost accounts. Member-versus-member multiplayer uses Elo ratings, including ghosts; guest games and singleplayer are unrated.
 
 ## What the stack looks like
 
