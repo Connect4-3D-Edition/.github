@@ -8,7 +8,7 @@ This organization is split into focused repositories so each part of the stack c
 
 | Repository | Purpose |
 | --- | --- |
-| [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) | Developer workspace with the shared VS Code workspace, local setup guides, and cross-repo notes |
+| [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) | Developer workspace with VS Code tasks, local setup, instructions, and coordinated checks |
 | [`frontend`](https://github.com/Connect4-3D-Edition/frontend) | React-based client for the player experience and 3D presentation |
 | [`service-api`](https://github.com/Connect4-3D-Edition/service-api) | FastAPI service for user-facing platform features such as authentication |
 | [`game-api`](https://github.com/Connect4-3D-Edition/game-api) | FastAPI service for game-specific backend logic |
@@ -35,7 +35,7 @@ It also makes the public organization easier to browse: visitors can quickly see
 
 ## Where to begin
 
-- Developers starting locally should begin with the [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) repository for workspace setup, local environment instructions, and the shared workspace file.
+- Developers starting locally should begin with the [`.wrapper`](https://github.com/Connect4-3D-Edition/.wrapper) repository for workspace setup, local environment instructions, and development tasks.
 - New visitors who want the product-facing application can start with the [`frontend`](https://github.com/Connect4-3D-Edition/frontend) repository.
 - Anyone trying to understand the backend split should look at [`service-api`](https://github.com/Connect4-3D-Edition/service-api), [`game-api`](https://github.com/Connect4-3D-Edition/game-api), and [`common-lib`](https://github.com/Connect4-3D-Edition/common-lib).
 - The infrastructure and database repositories show how the supporting environment is organized behind the application.
